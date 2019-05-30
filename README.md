@@ -1,7 +1,7 @@
-##About
+## About
 Monitor your steam game servers. 
 
-##Installation
+## Installation
 ### Docker
 `docker build -t steam-server-monitor .`
 
