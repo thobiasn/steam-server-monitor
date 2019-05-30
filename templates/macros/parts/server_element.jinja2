@@ -14,18 +14,11 @@
                 <p>Undefined</p>
             {% endif %}
         </div>
-        <div class="col s1">
+        <div class="col s2">
             {% if server %}
-                <p>{{ server['players'] }} / {{ server['max_players'] }}</p>
+                <p>{{ server['players'] }} / {{ server['max_players'] }} Players</p>
             {% else %}
-                <p>? / ?</p>
-            {% endif %}
-        </div>
-        <div class="col s1">
-            {% if server %}
-                <p>{{ server['ping'] }} Ping</p>
-            {% else %}
-                <p>? Ping</p>
+                <p>? / ? Players</p>
             {% endif %}
         </div>
     </li>
