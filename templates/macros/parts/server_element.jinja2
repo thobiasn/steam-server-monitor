@@ -1,0 +1,32 @@
+{% macro build_server_element(server) %}
+    <li class="collection-item row">
+        <div class="col s1">
+            {% if server %}
+                <p>UP</p>
+            {% else %}
+                <p>DOWN</p>
+            {% endif %}
+        </div>
+        <div class="col s9">
+            {% if server %}
+                <p>{{ server['name'] }}</p>
+            {% else %}
+                <p>Undefined</p>
+            {% endif %}
+        </div>
+        <div class="col s1">
+            {% if server %}
+                <p>{{ server['players'] }} / {{ server['max_players'] }}</p>
+            {% else %}
+                <p>? / ?</p>
+            {% endif %}
+        </div>
+        <div class="col s1">
+            {% if server %}
+                <p>{{ server['ping'] }} Ping</p>
+            {% else %}
+                <p>? Ping</p>
+            {% endif %}
+        </div>
+    </li>
+{% endmacro %}

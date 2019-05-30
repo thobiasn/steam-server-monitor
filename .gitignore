@@ -1,0 +1,7 @@
+.virtualenvs/
+log/
+*.log
+*.idea/
+.git/
+__pycache__
+venv/
