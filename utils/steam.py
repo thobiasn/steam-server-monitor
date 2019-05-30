@@ -6,7 +6,7 @@ from steam import game_servers as gs
 async def get_server_info(address):
     """
     get steam server information
-    :param address: tuple with ip and port | ('some.ip.here', 27015)
+    :param address: tuple withpip ip and port | ('some.ip.here', 27015)
     :return:
     """
     try:
@@ -16,4 +16,3 @@ async def get_server_info(address):
         result = None
 
     return result
-

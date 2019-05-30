@@ -12,6 +12,8 @@ def make_app():
 
     app.add_routes(routes_api)
     app.add_routes(routes_ui)
+    app['static_root_url'] = '/public'
+    app.router.add_static('/public', 'templates/public')
 
     return app
 
