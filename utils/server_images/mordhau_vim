@@ -95,7 +95,7 @@ ENV SERVER_ADMINPW="vPcvkUqNdSmVSLStS4EuNPaFq3xmNyJF39Xe2Dwx" \
 	SERVER_DEFAULTMAP="\/Game\/Mordhau\/Maps\/Contraband\/FFA_Contraband.FFA_Contraband"
 
 # install vim to allow editing
-RUN apt-get install vim
+RUN apt-get install -y --no-install-recommends --no-install-suggests vim
 
 # Switch to user steam
 USER steam

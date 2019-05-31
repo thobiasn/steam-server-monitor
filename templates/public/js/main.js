@@ -61,7 +61,7 @@ function build_server_list_element(server){
                 '<p>'+Math.round(server["_ping"])+'</p>',
             '</div>',
             '<div class="col s1">',
-                '<p class="tooltipped" data-position="right" data-tooltip="Remove server"><i class="red-button red-text" data-feather="x-square" onclick="remove_server('+server+')"></i></a></p>',
+                '<p class="tooltipped" data-position="right" data-tooltip="Remove server"><i class="red-button red-text" data-feather="x-square" onclick="remove_server('+server+')"></i></p>',
             '</div>',
         '</li>'
     );
@@ -93,7 +93,9 @@ function build_server_list(servers){
                     '<div class="col s1">',
                         '<b>Ping</b>',
                     '</div>',
-                    '<div class="col s1"></div>',
+                    '<div class="col s1">' +
+                        '<p><i class="green-button green-text" data-feather="plus-square"></i></p>',
+                    '</div>',
                 '</div>',
             '</li>',
     );
