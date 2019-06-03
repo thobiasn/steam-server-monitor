@@ -1,5 +1,5 @@
 ## About
-Simple game server monitor, for situations where you don't have a control panel. Monitor your steam game servers. Should not be used in production.
+Simple game server monitor, for situations where you don't have a control panel. Monitor your steam game servers. Currently shows server status (up/down), server name, player count and ping. Should not be used in production, since each visit to the monitor performs request to the steam api. If you want to run this in a production environment you should define a global server update method, instead of updating on each request.
 
 ## Installation
 Add your servers to `config.py` 
