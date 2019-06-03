@@ -1,7 +1,9 @@
 ## About
-Monitor your steam game servers. 
+Simple game server monitor, for situations where you don't have a control panel. Monitor your steam game servers. Should not be used in production.
 
 ## Installation
+Add your servers to `config.py` 
+
 ### Docker
 `docker build -t steam-server-monitor .`
 
